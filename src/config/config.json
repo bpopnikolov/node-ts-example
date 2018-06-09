@@ -1,0 +1,70 @@
+{
+    "development": {
+        "api": {
+            "aws": {
+                "key": "@@@@@",
+                "secret": "@@@@@"
+            }
+        },
+        "cookie": {
+            "secret": "UlTiMaTeSeCrEtKeY"
+        },
+        "token": {
+            "secret": "UlTiMaTeSeCrEtKeY"
+        },
+        "bcrypt": {
+            "SALT_FACTOR": 10
+        },
+        "passport": {
+            "secret": "UlTiMaTeSeCrEtKeY"
+        },
+        "multer": {
+            "dest": "../../../uploads"
+        },
+        "db": {
+            "mongo": {
+                "uri": "mongodb://comet-admin:cometenomer1@ds159459.mlab.com:59459/comet-api"
+            },
+            "redis": {
+                "host": "localhost",
+                "port": 6379,
+                "password": null,
+                "namespace": "comet-db"
+            }
+        }
+    },
+    "test": {},
+    "production": {
+        "api": {
+            "aws": {
+                "key": "@@@@@",
+                "secret": "@@@@@"
+            }
+        },
+        "cookie": {
+            "secret": "UlTiMaTeSeCrEtKeY"
+        },
+        "token": {
+            "secret": "UlTiMaTeSeCrEtKeY"
+        },
+        "bcrypt": {
+            "SALT_FACTOR": 10
+        },
+        "db": {
+            "mongo": {
+                "host": "localhost",
+                "port": 27017,
+                "username": null,
+                "password": null,
+                "db": "comet-db"
+            },
+            "redis": {
+                "host": "localhost",
+                "port": 6379,
+                "password": null,
+                "namespace": "comet-db"
+            }
+        }
+    }
+
+}
