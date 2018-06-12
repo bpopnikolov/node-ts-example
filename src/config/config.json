@@ -9,7 +9,7 @@
         "cookie": {
             "secret": "UlTiMaTeSeCrEtKeY"
         },
-        "token": {
+        "jwt": {
             "secret": "UlTiMaTeSeCrEtKeY"
         },
         "bcrypt": {
@@ -23,7 +23,10 @@
         },
         "db": {
             "mongo": {
-                "uri": "mongodb://comet-admin:cometenomer1@ds159459.mlab.com:59459/comet-api"
+                "hostString": "6a.mongo.evennode.com:27017,6b.mongo.evennode.com:27017/995e129a418ab38e934199978d9c186e?replicaSet=eu-6",
+                "user": "995e129a418ab38e934199978d9c186e",
+                "password": "yav0r3EvNuh",
+                "db": "995e129a418ab38e934199978d9c186e"
             },
             "redis": {
                 "host": "localhost",
@@ -44,19 +47,24 @@
         "cookie": {
             "secret": "UlTiMaTeSeCrEtKeY"
         },
-        "token": {
+        "jwt": {
             "secret": "UlTiMaTeSeCrEtKeY"
         },
         "bcrypt": {
             "SALT_FACTOR": 10
         },
+        "passport": {
+            "secret": "UlTiMaTeSeCrEtKeY"
+        },
+        "multer": {
+            "dest": "../../../uploads"
+        },
         "db": {
             "mongo": {
-                "host": "localhost",
-                "port": 27017,
-                "username": null,
-                "password": null,
-                "db": "comet-db"
+                "hostString": "6a.mongo.evennode.com:27017,6b.mongo.evennode.com:27017/995e129a418ab38e934199978d9c186e?replicaSet=eu-6",
+                "user": "995e129a418ab38e934199978d9c186e",
+                "password": "yav0r3EvNuh",
+                "db": "995e129a418ab38e934199978d9c186e"
             },
             "redis": {
                 "host": "localhost",
@@ -66,5 +74,4 @@
             }
         }
     }
-
 }
